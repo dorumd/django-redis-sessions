@@ -83,7 +83,8 @@ class RedisServer():
                 socket_timeout=settings.SESSION_REDIS_SOCKET_TIMEOUT,
                 retry_on_timeout=settings.SESSION_REDIS_RETRY_ON_TIMEOUT,
                 db=settings.SESSION_REDIS_DB,
-                password=settings.SESSION_REDIS_PASSWORD
+                password=settings.SESSION_REDIS_PASSWORD,
+                ssl=settings.SESSION_REDIS_SSL,
             )
         elif self.connection_type == 'redis_unix_url':
             self.__redis[self.connection_key] = redis.StrictRedis(

@@ -12,7 +12,7 @@ SESSION_REDIS_PREFIX = SESSION_REDIS.get('prefix', '')
 SESSION_REDIS_PASSWORD = SESSION_REDIS.get('password', None)
 SESSION_REDIS_UNIX_DOMAIN_SOCKET_PATH = SESSION_REDIS.get('unix_domain_socket_path', None)
 SESSION_REDIS_URL = SESSION_REDIS.get('url', None)
-
+SESSION_REDIS_SSL = SESSION_REDIS.get('ssl', False)
 
 """
 Should be on the format:
